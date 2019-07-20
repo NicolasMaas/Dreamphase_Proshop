@@ -1,0 +1,45 @@
+.c-form {
+    width: 100%;
+}
+
+.c-form__input {
+    // Positioning
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+
+    // Sizing
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 24px;;
+
+    // Styling
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .16);
+    -webkit-appearance: none;
+    /* for iOS to show box shadows */
+    outline: 0;
+}
+
+.c-form__input--text {
+    height: 128px;
+}
+
+.c-form__submit {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 128px;
+    height: 40px;
+
+    will-change: background-color;
+    transition: background-color 100ms ease-in-out;
+}
+
+.c-form__submit:hover {
+    background-color: rgba(0, 0, 0, 1);
+}

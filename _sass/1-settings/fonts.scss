@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Crimson';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; /* Read next point */
+    unicode-range: U+000-5FF; /* Download only latin glyphs */
+    src: local('Crimson'),
+            url('/assets/fonts/crimson-roman-webfont.woff2') format('woff2'), 
+            url('/assets/fonts/crimson-roman-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Crimson';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap; /* Read next point */
+    unicode-range: U+000-5FF; /* Download only latin glyphs */
+    src: local('Crimson'),
+            url('/assets/fonts/crimson-bold-webfont.woff2') format('woff2'), 
+            url('/assets/fonts/crimson-bold-webfont.woff') format('woff');
+}

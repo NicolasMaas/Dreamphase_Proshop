@@ -1,0 +1,23 @@
+<div class="o-row">
+    <div class="o-container">
+        <nav class="c-navigation">
+            <ul class="c-navigation__list">
+                {% for item in site.data.navigation %}
+                {% if page.url == item.link %}
+                <li class="c-navigation__list-item">
+                    <a class="c-navigation__list-link c-navigation__list-link--active" href="{{ item.link }}">
+                        {{ item.name }}
+                    </a>
+                </li>
+                {% else %}
+                <li class="c-navigation__list-item">
+                    <a class="c-navigation__list-link" href="{{ item.link }}">
+                        {{ item.name }}
+                    </a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+.c-navigation {
+}
+
+.c-navigation__list {
+}
+
+.c-navigation__list-item {
+    display: inline;
+    margin-right: 24px;
+}
+
+.c-navigation__list-link {
+    color: black;
+    text-decoration: none;
+    opacity: .7;
+
+    will-change: opacity;
+    transition: opacity 200ms ease-in-out;
+}
+
+.c-navigation__list-link:hover {
+    opacity: 1;
+}
+
+.c-navigation__list-link:visited {
+    color: black;
+}
+
+.c-navigation__list-link--active {
+    opacity: 1;
+}

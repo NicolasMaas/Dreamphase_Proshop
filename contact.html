@@ -1,0 +1,21 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+title: Contact
+layout: default
+---
+<div class="o-row">
+    <div class="o-container">
+        <form class="js-form c-form" action="" method="POST">
+            <input class="c-form__input" type="text" name="name" placeholder="Naam"><br>
+            <input class="c-form__input" type="email" name="mail" placeholder="Email"><br>
+            <input class="c-form__input" type="subject" name="subject" placeholder="Onderwerp"><br>
+            <textarea class="c-form__input c-form__input--text" name="msg"></textarea>
+        </form>
+
+        <button class="js-submit c-button-reset c-form__submit">Verzenden</button>
+    </div>
+</div>
+
+<script defer src="{{ '/assets/js/sendMail.js' | relative_url }}"></script>

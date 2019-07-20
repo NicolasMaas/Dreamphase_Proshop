@@ -1,0 +1,1 @@
+compress.html minify's all the html pages

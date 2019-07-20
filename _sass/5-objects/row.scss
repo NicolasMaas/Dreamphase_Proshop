@@ -1,0 +1,20 @@
+.o-row {
+    width: 100%;
+    padding: 24px 32px;
+    box-sizing: border-box;
+}
+
+.o-row-fluid {
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.o-row--dark {
+    background-color: black;
+    color: white;
+}
+
+.o-row--theme {
+    background-color: $theme-color;
+    color: white;
+}
