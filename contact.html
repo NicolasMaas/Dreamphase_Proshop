@@ -7,15 +7,24 @@ layout: default
 ---
 <div class="o-row">
     <div class="o-container">
-        <form class="js-form c-form" action="" method="POST">
-            <input class="c-form__input" type="text" name="name" placeholder="Naam"><br>
-            <input class="c-form__input" type="email" name="mail" placeholder="Email"><br>
-            <input class="c-form__input" type="subject" name="subject" placeholder="Onderwerp"><br>
+
+
+        <form action="" class="js-form c-form" method="POST">
+            <input class="c-form__input" name="name" placeholder="Naam" type="text"><br>
+            <input class="c-form__input" name="mail" placeholder="Email" type="email"><br>
+            <input class="c-form__input" name="subject" placeholder="Onderwerp" type="subject"><br>
             <textarea class="c-form__input c-form__input--text" name="msg"></textarea>
         </form>
 
-        <button class="js-submit c-button-reset c-form__submit">Verzenden</button>
+        <div class="c-form--bottom">
+            <button class="js-submit c-button-reset c-form__submit">Verzenden</button>
+
+            <section class="js-notification c-notification">
+                <p class="js-notification--text c-notification--text">Mail send!</p>
+            </section>
+        </div>
     </div>
 </div>
+
 
 <script defer src="{{ '/assets/js/sendMail.js' | relative_url }}"></script>

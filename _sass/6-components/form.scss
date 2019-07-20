@@ -31,8 +31,6 @@
     color: white;
     border-radius: 4px;
 
-    margin-left: auto;
-    margin-right: auto;
     width: 128px;
     height: 40px;
 
@@ -42,4 +40,17 @@
 
 .c-form__submit:hover {
     background-color: rgba(0, 0, 0, 1);
+}
+
+.c-form--bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .c-form--bottom {
+        flex-direction: row;
+    }
 }

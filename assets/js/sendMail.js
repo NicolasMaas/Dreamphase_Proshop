@@ -1,5 +1,7 @@
 let submit = document.querySelector('.js-submit'),
-    form = document.querySelector('.js-form');
+    form = document.querySelector('.js-form'),
+    notification = document.querySelector('.js-notification'),
+    notificationText = document.querySelector('.js-notification--text');
 
 submit.addEventListener('click', async () => {
     let name = form.name.value,
@@ -32,6 +34,6 @@ submit.addEventListener('click', async () => {
                 'Content-Type': 'application/json'
             }
         })
-        .then(console.log('Mail send!'))
-        .catch(error => console.error('Error: ', error));
+        .then(notification.classList.add("c-notification--success"))
+        .catch(notification.classList.add("c-notification--error"));
 });
