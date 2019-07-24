@@ -17,7 +17,6 @@ submit.addEventListener('click', async () => {
     console.log(subject);
     console.log(msg);
 
-
     let data = {
         name: name,
         mail: mail,

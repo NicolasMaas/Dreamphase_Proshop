@@ -5,6 +5,7 @@
 // 1. Settings
 @import '1-settings/colors';
 @import '1-settings/fonts';
+@import '1-settings/gutter';
 
 // 2. Tools
 
@@ -13,6 +14,7 @@
 
 // 4. Elements
 @import '4-elements/body';
+@import '4-elements/headers';
 
 // 5. Objects
 @import '5-objects/wrapper';
@@ -25,5 +27,8 @@
 @import '6-components/button';
 @import '6-components/form';
 @import '6-components/notification';
+@import '6-components/hero';
+@import '6-components/steps';
 
 // 7. Utitilities
+@import '7-utilities/shadows';

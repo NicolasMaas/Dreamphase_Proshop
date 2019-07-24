@@ -1,0 +1,110 @@
+.c-hero {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.c-hero--left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 100%;
+    width: 100vw;
+}
+
+.c-hero--right {
+    width: 100vw;
+    height: 100%;
+}
+
+.c-hero__img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+
+.c-hero__title {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    margin-left: $gutter;
+    margin-right: $gutter;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.c-hero__text {
+    margin: 0 $gutter 24px $gutter;
+    font-size: 18px;
+    line-height: 22px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    max-width: 380px;
+}
+
+.c-hero__button {
+    margin: 0 $gutter;
+}
+
+@media (min-width: 768px) {
+    .c-hero {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $black;
+    }
+    
+    .c-hero--left {
+        position: relative;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #FFFFFF;
+    
+        padding: 32px 72px;
+        box-sizing: border-box;
+    }
+    
+    .c-hero--right {
+        width: 50vw;
+        box-sizing: border-box;
+        object-fit: cover;
+        height: 100%;
+    }
+    
+    .c-hero__title {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 800;
+        text-shadow: unset;
+        text-align: right;
+        margin: unset;
+    }
+    
+    .c-hero__text {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 300;
+        font-style: italic;
+        max-width: 460px;
+        text-align: right; 
+        margin: 32px 0;
+        text-shadow: unset;
+    }
+    
+    .c-hero__img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }    
+
+    .c-hero__button {
+        margin: unset;
+    }
+}
