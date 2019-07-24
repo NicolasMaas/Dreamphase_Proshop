@@ -13,15 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Nicolas Maas | Web & App Developer
-author: myself
+title: Nicolas Proshop | Professioneel en op maat gemaakt advies voor de beste bowlingresultaten!
+author: Nicolas Van Caelenberghe
 email: nicolas@dreamphase.be
-description: >- # this means to ignore newlines until "baseurl:"
-    A 23 year old Web & App Developer
+description: Op zoek naar materiaal om professioneel te bowlen? Het advies van Nicolas van Caelenberghe is de eerste stap naar betere resultaten. Ik help je graag vrijblijvend verder.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nicolasmaas.be" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nicolasproshop.be" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
+
+social:
+    name: Nicolas Proshop
+    links:
+        - https://www.instagram.com/nicolasproshop/
+        - https://www.facebook.com/nicolasproshop/
 
 # Build settings
 markdown: kramdown
