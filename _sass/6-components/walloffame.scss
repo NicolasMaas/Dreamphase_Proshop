@@ -1,11 +1,17 @@
 .c-wall-of-fame {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     max-width: 878px;
-
+    
     margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .c-wall-of-fame {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .c-wall-of-fame__text {
