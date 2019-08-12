@@ -1,0 +1,21 @@
+.c-lead {
+    font-size: 32px;
+    line-height: 40px;
+
+    margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+    .c-lead {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
+
+.c-lead__dark {
+    color: $black;
+}
+
+.c-lead__light {
+    color: $white;
+}
