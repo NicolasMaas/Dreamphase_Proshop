@@ -12,17 +12,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 48px 0;
+
+    padding-bottom: 48px;
 }
 
 @media (min-width: 768px) {
     .c-review {
-        padding: 156px 0;
+        padding: 108px 0 156px 0;
     }
-}
-
-.c-reviews__title {
-    margin-bottom: 64px;
 }
 
 .c-review__border {
@@ -33,11 +30,12 @@
 .c-review__text {
     display: flex;
     flex-direction: column;
-    margin: 56px auto;
+
+    margin: 32px auto;
     max-width: 674px;
+
     font-size: 18px;
     line-height: 24px;
-
     text-align: center;
 
     .c-review__text--review {
@@ -71,6 +69,7 @@
     .c-review__text {
         font-size: 24px;
         line-height: 32px;
+        margin: 56px auto;
     }
 
     .c-review__author {

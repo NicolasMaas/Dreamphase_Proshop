@@ -16,8 +16,13 @@
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
+    height: 64px;
     
-    color: $white;
+    color: $black;
+    cursor: pointer;
+
+    will-change: color;
+    transition: 100ms ease-in;
 
     &::after {
         content: ">";
@@ -37,11 +42,30 @@
 
         background-color: $theme-color;
         border-radius: 100%;
+
+        will-change: color;
+        transition: 100ms ease-in;
     }
 }
 
-@media (min-width: 768px) {
-    .c-button {
+@media (max-width: 768px) {
+    .c-button__reverse {
+        color: $white;
+    }
+}
+
+.c-button:hover,
+.c-button:focus {
+    &::after {
         color: $black;
+    }
+    color: $theme-color;
+}
+
+.c-button:active,
+.c-button:focus {
+    outline: none;
+    &::after {
+        opacity: .8;
     }
 }
