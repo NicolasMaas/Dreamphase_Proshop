@@ -11,20 +11,26 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.35);
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
+
     padding: 0 $gutter;
+    box-sizing: border-box;
+    
+    background-color: rgba(0, 0, 0, 0.35);
 }
 
 .c-hero--right {
-    width: 100vw;
     height: 100%;
+    width: 100vw;
 }
 
 .c-hero__img {
     height: 100vh;
     width: 100vw;
+    
     object-fit: cover;
     margin-bottom: -4px;
 }
@@ -33,12 +39,12 @@
     font-size: 36px;
     line-height: 48px;
     margin-bottom: 24px;
-    padding-right: 0 !important;
 }
 
 .c-hero__text {
     font-size: 18px;
     line-height: 22px;
+
     max-width: 380px;
     margin-bottom: 32px;
 }
@@ -56,10 +62,10 @@
     .c-hero--left {
         position: relative;
         width: 50vw;
-        display: flex;
-        flex-direction: column;
+
         align-items: flex-end;
-        background-color: #FFFFFF;
+        
+        background-color: unset;
     
         padding: 32px 72px;
         box-sizing: border-box;
@@ -67,17 +73,12 @@
     
     .c-hero--right {
         width: 50vw;
-        box-sizing: border-box;
-        object-fit: cover;
         height: 100%;
     }
     
     .c-hero__title {
-        font-family: 'Archivo Black', sans-serif;
         font-size: 48px;
         line-height: 56px;
-        text-shadow: unset;
-        text-align: right;
         margin: unset;
     }
     
@@ -86,20 +87,14 @@
         line-height: 32px;
         font-weight: 300;
         font-style: italic;
+
         max-width: 460px;
         text-align: right; 
         margin: 32px 0;
-        text-shadow: unset;
     }
     
     .c-hero__img {
         height: 100vh;
         width: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
     }    
-
-    .c-hero__button {
-        margin: unset;
-    }
 }
