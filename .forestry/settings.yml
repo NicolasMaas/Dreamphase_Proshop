@@ -8,7 +8,7 @@ sections:
   label: Pagina's
   create: all
 - type: directory
-  path: _events
+  path: events
   label: Events
   create: documents
   match: "**/*"
