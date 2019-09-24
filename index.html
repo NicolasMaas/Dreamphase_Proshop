@@ -117,7 +117,7 @@ layout: default
             {% for events in site.events %}
 
             <div class="c-events">
-                <h2>{{ events.name }} - {{ events.date ||  date: "%d %B" }}</h2>
+                <h2>{{ events.name }} - {{ events.date | date: "%d %B" }}</h2>
                 <a href="{{ events.facebook-link }}">
                     <button class="c-button-reset c-button c-button__reverse c-button--bounce"></button>
                 </a>
