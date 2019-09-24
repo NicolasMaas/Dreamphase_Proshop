@@ -7,9 +7,11 @@ sections:
 - type: jekyll-pages
   label: Pagina's
   create: all
-- type: jekyll-collections
+- type: directory
+  path: _events
   label: Events
-  create: all
+  create: documents
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
