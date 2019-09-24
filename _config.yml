@@ -33,6 +33,7 @@ markdown: kramdown
 plugins:
     - jekyll-sitemap
     - jekyll-seo-tag
+    - jekyll-menus
 
 sass:
     sass_dir: _sass
