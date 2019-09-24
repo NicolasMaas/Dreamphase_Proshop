@@ -7,7 +7,7 @@ sections:
 - type: jekyll-pages
   label: Pagina's
   create: documents
-  new_doc_ext: ".html"
+  new_doc_ext: html
 - type: directory
   path: _events
   label: Events
@@ -15,8 +15,8 @@ sections:
   match: "**/*"
   templates:
   - event-template
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: assets/images
+public_path: images
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
