@@ -3,3 +3,5 @@
 
 - name: Contact
   link: /contact
+
+# Change menu to use jekyll-menus: https://github.com/forestryio/jekyll-menus/
