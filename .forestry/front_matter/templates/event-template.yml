@@ -4,10 +4,24 @@ hide_body: false
 fields:
 - type: text
   name: name
-  label: name
-- type: text
-  name: date
-  label: date
+  label: Eventnaam
+  description: De naam van het evenement
+  config:
+    required: true
+- name: date
+  type: datetime
+  label: Datum
+  description: Wanneer is het evenement?
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+    export_format: DD/MM h:MM
+  default: ''
 - type: text
   name: facebook-link
-  label: facebook-link
+  label: Facebookevenement
+  description: Geef hier de link naar het Facebook Evenement zodat mensen kunnen doorklikken
+    hiernaar en zich aanwezig kunnen zetten
+  hidden: false
