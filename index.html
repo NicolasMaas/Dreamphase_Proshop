@@ -22,9 +22,9 @@ layout: default
         </section>
 
         <section class="c-hero--right">
-            <source media="(min-width: 1024px)" srcset="/assets/images/picture@2x.png">
+            <source media="(min-width: 1024px)" srcset="./assets/images/picture@2x.png">
             <img alt="Nicolas Van Caelenberghe, eigenaar van Nicolas Proshop" class="c-hero__img"
-                src="/assets/images/picture.png">
+                src="./assets/images/picture.png">
         </section>
     </div>
     <!-- </div> -->
@@ -106,4 +106,30 @@ layout: default
             <button class="c-button-reset c-button">Wall Of Fame</button>
         </section>
     </div>
+</div>
+
+<div class="o-row-fluid">
+    <!-- <div class="o-container"> -->
+    <div class="c-hero">
+        <section class="c-hero--left c-hero--left-events c-hero--left__dark">
+            <h2 class="c-lead c-lead__light">Evenementen</h2>
+
+            {% for events in site.events %}
+
+            <div class="c-events">
+                <h2>{{ events.name }} - {{ events.date ||  date: "%d %B" }}</h2>
+                <a href="{{ events.facebook-link }}">
+                    <button class="c-button-reset c-button c-button__reverse c-button--bounce"></button>
+                </a>
+            </div>
+            {% endfor %}
+        </section>
+
+        <section class="c-hero--right">
+            <source media="(min-width: 1024px)" srcset="./assets/images/events@2x.png">
+            <img alt="Nicolas Van Caelenberghe, eigenaar van Nicolas Proshop" class="c-hero__img"
+                src="./assets/images/events.png">
+        </section>
+    </div>
+    <!-- </div> -->
 </div>

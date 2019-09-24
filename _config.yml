@@ -42,6 +42,9 @@ assets:
     sources:
         - assets/fonts
 
+collections:
+    events: 
+
 exclude:
     - functions
     - node_modules
