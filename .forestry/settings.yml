@@ -7,7 +7,9 @@ sections:
 - type: jekyll-pages
   label: Pagina's
   create: all
-
+- type: jekyll-collections
+  label: Events
+  create: all
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
