@@ -6,7 +6,8 @@ webhook_url:
 sections:
 - type: jekyll-pages
   label: Pagina's
-  create: all
+  create: documents
+  new_doc_ext: ".html"
 - type: directory
   path: _events
   label: Events
